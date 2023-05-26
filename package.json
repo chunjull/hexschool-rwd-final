@@ -1,0 +1,14 @@
+{
+  "name": "hexschool-rwd-final",
+  "version": "1.0.0",
+  "description": "作業網址：[【最終試煉】一變應萬變的響應式網頁設計](https://rpg.hexschool.com/task/71/show#completeList)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "purecss": "^3.0.0"
+  }
+}
