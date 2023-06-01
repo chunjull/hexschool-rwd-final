@@ -46,3 +46,156 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* 通用設定 */
+*, 
+*:befrore,
+*:after {
+	border-sizing: border-box;
+}
+
+body {
+	font-family: 'Noto Sans TC', sans-serif;
+	color: #3d1101;
+	font-weight: 100;
+	line-height: 1.5;
+}
+
+a {
+	color: #3d1101;
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+/* header */
+
+header {
+	background-color: #000;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 16px 48px 16px 42px;
+}
+
+header h1 a {
+	background-image: url("./assets/logo_w@svg.svg");
+	width: 120px;
+	height: 24px;
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.navbar {
+	display: flex;
+	gap: 30px;
+}
+
+.nav-item a {
+	color: #fff;
+}
+
+/* banner */
+.banner {
+	background-image: url('./assets/header_desktop@2x.png');
+	height: 364px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner-box {
+	text-align: center;
+	padding: 20px 42px 26px 22px;
+	background: rgba(0,0,0,0.35);
+}
+
+.banner-box h2 {
+	font-size: 32px;
+	color: #fff;
+	padding-bottom: 16px;
+}
+
+.banner-box h3 {
+	color: #fff;
+}
+
+.banner-box span {
+	font-size: 16px;
+	vertical-align: middle;
+}
+
+/* footer */
+footer {
+	background-color: #efe9e7;
+	padding: 50px 49px 50px 43px;
+}
+
+.footer-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	gap: 75px;
+}
+
+.footer-content {
+	display: flex;
+	gap: 21px;
+}
+
+.footer-item h4 {
+	font-size: 24px;
+	padding-bottom: 16px;
+}
+
+.footer-item-about {
+	width: 299px;
+}
+
+.contact-item {
+	list-style-type: disc;
+	margin-left: 16px;
+}
+
+.footer-media h2 {
+	padding-bottom: 22px;
+}
+
+.footer-media h2 a {
+	background-image: url("./assets/logo_l@svg.svg");
+	width: 244px;
+	height: 49px;
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.media-list {
+	display: flex;
+	justify-content: end;
+	gap: 12px;
+}
+
+.fa-brands {
+	font-size: 36px;
+}
+
+.fa-google-plus-square {
+	color: #DB4437;
+}
+
+.fa-twitter-square {
+	color: #41ABE1;
+}
+
+.fa-facebook-square {
+	color: #3A5795;
+}
