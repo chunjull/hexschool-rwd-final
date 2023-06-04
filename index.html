@@ -93,10 +93,11 @@
                         <div class="review-content">
                             <h4>高雄一口吃</h4>
                             <p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+                            <div class="review-name">
+                                <span> -- 產品經理</span>
+                            </div>
                         </div>
-                        <div class="review-name">
-                            <span> -- 產品經理</span>
-                        </div>
+                        
                     </li>
                     <li class="review-item">
                         <div class="img-frame">
@@ -105,9 +106,9 @@
                         <div class="review-content">
                             <h4>廟口小霸王</h4>
                             <p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
-                        </div>
-                        <div class="review-name">
-                            <span> -- 金身道士</span>
+                            <div class="review-name">
+                                <span> -- 金身道士</span>
+                            </div>
                         </div>
                     </li>
                     <li class="review-item">
@@ -117,38 +118,41 @@
                         <div class="review-content">
                             <h4>春天也來了</h4>
                             <p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
-                        </div>
-                        <div class="review-name">
-                            <span> -- 美麗萬分</span>
+                            <div class="review-name">
+                                <span> -- 美麗萬分</span>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
-            <div class="booking" id="map">
+            <div class="reserve" id="map">
                 <h3>我們的位置不太夠坐<br>要不要先訂位呢？</h3>
-                <img src="./assets/Map@2x.png" alt="location-map">
-                <form action="./index.html">
-                    <label>姓名
-                        <input type="text" placeholder="六角講師吃尾牙">
-                    </label>
-                    <label>電話
-                        <input type="tel" placeholder="02-1234567">
-                    </label>
-                    <label>信箱
-                        <input type="main" placeholder="test@gmail.com">
-                    </label>
-                    <label>人數
-                        <input type="number">
-                    </label>
-                    <label>是否需要素食
-                        <input type="radio" value="是">
-                        <input type="radio" value="否">
-                    </label>
-                    <div class="form-submit">
-                        <button type="submit" value="取消">取消</button>
-                        <button type="submit" value="送出">送出</button>
-                    </div>
-                </form>
+                <div class="reserve-section">
+                    <img src="./assets/Map@2x.png" alt="location-map">
+                    <form action="./index.html">
+                        <label class="input-name">姓名</label><br>
+                        <input type="text" placeholder="六角講師吃尾牙" class="input-section">
+                        <br>
+                        <label class="input-name">電話</label><br>
+                        <input type="tel" placeholder="02-1234567" class="input-section">
+                        <br>
+                        <label class="input-name">信箱</label><br>
+                        <input type="email" placeholder="test@gmail.com" class="input-section">
+                        <br>
+                        <label class="input-name">人數</label><br>
+                        <input type="number" class="input-section">
+                        <br>
+                        <label class="input-name">是否需要素食</label><br>
+                        <div class="radio-section">
+                            <label for="yes">是<input type="radio" value="yes" id="yes" class="radio-value" name="vagen"></label>
+                            <label for="no" class="ml-32">否<input type="radio" value="no" id="no" class="radio-value" name="vagen"></label>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" value="取消" class="button-cancel">取消</button>
+                            <button type="submit" value="送出" class="button-submit">送出</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
         <footer>

@@ -49,7 +49,7 @@ table {
 
 /* 通用設定 */
 *, 
-*:befrore,
+*:befrore
 *:after {
 	border-sizing: border-box;
 }
@@ -64,6 +64,11 @@ body {
 a {
 	color: #3d1101;
 	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 .container {
@@ -98,6 +103,13 @@ header h1 a {
 
 .nav-item a {
 	color: #fff;
+	padding-bottom: 15px;
+	border-bottom: 2px solid transparent;
+	transition-duration: 1.5s; 
+}
+
+.nav-item a:hover, .nav-item a:focus, .nav-item a:active {
+	border-bottom: 2px solid #fff;
 }
 
 /* banner */
@@ -164,6 +176,10 @@ footer {
 	margin-left: 16px;
 }
 
+.contact-item a:hover, .contact-item a:focus, .contact-item a:active {
+	opacity: .8;
+}
+
 .footer-media h2 {
 	padding-bottom: 22px;
 }
@@ -182,6 +198,10 @@ footer {
 	display: flex;
 	justify-content: end;
 	gap: 12px;
+}
+
+.media-item:hover, .media-item:focus, .media-item:active {
+	opacity: .8;
 }
 
 .fa-brands {
@@ -282,4 +302,148 @@ footer {
 .chef-article h5 {
 	line-height: 1.25;
 	margin-bottom: 16px;
+}
+
+/* review */
+.review {
+	background-color: #efe9e7;
+	padding: 50px 42px;
+}
+
+.review h3 {
+	font-size: 24px;
+	line-height: 1.5;
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+.review-list {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.review-item {
+	display: flex;
+	gap: 13px;
+}
+
+.img-frame img {
+	max-width: none;
+	width: 67px;
+	border-radius: 50%;
+}
+
+.review-content h4 {
+	font-size: 18px;
+	line-height: 1.3;
+	margin: 22px 0;
+}
+
+.review-content p {
+	line-height: 1.5;
+	margin-bottom: 16px;
+}
+
+.review-name {
+	display: flex;
+	justify-content: end;
+}
+
+.review-name span {
+	opacity: 75%;
+}
+
+/* reserve */
+.reserve {
+	background-color: rgba(250, 250, 250, 0.7);
+	padding: 50px 42px;
+}
+
+.reserve h3 {
+	font-size: 24px;
+	line-height: 1.3;
+	text-align: center;
+	margin-bottom: 38px;
+}
+
+.reserve-section {
+	display: flex;
+	gap: 20px;
+}
+
+.reserve-section img {
+	width: 460px;
+}
+
+.input-name {
+	font-size: 14px;
+	line-height: 1.4;
+} 
+
+.input-section {
+	width: 460px;
+	line-height: 1.3;
+	padding: 5px 0 5px 14px;
+	margin: 4px 0 10px 0;
+	border: 1px solid #cccccc;
+	box-shadow: inset 0 1px 0 0 #ececec;
+	border-radius: 3px;
+}
+
+.input-section::placeholder {
+	font-family: 'PingFangTC-Light';
+	font-size: 16px;
+	color: #4A4A4A;
+}
+
+.radio-section {
+	margin-top: 4px;
+}
+
+.radio-value {
+	margin-left: 4px;
+}
+
+.ml-32 {
+	margin-left: 32px;
+}
+
+.form-submit {
+	display: flex;
+	justify-content: end;
+	margin-top: 30px;
+}
+
+.button-cancel {
+	width: 70px;
+	color: #fff;
+	background-color: rgba(0,0,0,0.35);
+	font-size: 14px;
+	line-height: 1.3;
+	text-decoration: none;
+	border: none;
+	border-radius: 3px;
+	padding: 6px 0;
+	margin-right: 11px;
+}
+
+.button-cancel:hover, .button-cancel:focus, .button-cancel:active {
+	background-color: #F56C23;
+}
+
+.button-submit {
+	width: 70px;
+	color: #fff;
+	background-color: #F56C23;
+	font-size: 14px;
+	line-height: 1.3;
+	text-decoration: none;
+	border: none;
+	border-radius: 3px;
+	padding: 6px 0;
+}
+
+.button-submit:hover, .button-submit:focus, .button-submit:active {
+	background-color: rgba(0,0,0,0.35);
 }
