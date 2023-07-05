@@ -49,9 +49,9 @@ table {
 
 /* 通用設定 */
 *, 
-*:befrore
+*:before,
 *:after {
-	border-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
@@ -84,10 +84,11 @@ header {
 	display: flex;
 	justify-content: space-between;
 	padding: 16px 48px 16px 42px;
+	position: relative;
 }
 
 header h1 a {
-	background-image: url("./assets/logo_w@svg.svg");
+	background-image: url("/assets/logo_w@svg.svg");
 	width: 120px;
 	height: 24px;
 	display: block;
@@ -108,12 +109,21 @@ header h1 a {
 	}
 }
 
+.menu-btn {
+	color: #fff;
+	font-size: 24px;
+	display: none;
+	position: absolute;
+	right: 48px;
+}
+
 .navbar {
 	display: flex;
 	gap: 30px;
 }
 
 .nav-item a {
+	display: block;
 	color: #fff;
 	padding-bottom: 15px;
 	border-bottom: 2px solid transparent;
@@ -124,9 +134,39 @@ header h1 a {
 	border-bottom: 2px solid #fff;
 }
 
+@media(max-width: 767px) {
+	.navbar {
+		display: none;
+		left: 0;
+        right: 0;
+        bottom:0;
+		position: absolute;
+		text-align: center;
+		flex-direction: column;
+		transform:translateY(100%);
+		background-color: #000;
+	}
+
+	.nav-item {
+		width: 100%;
+	}
+
+	.nav-item a {
+		padding: 8px 0;
+	}
+
+	.menu-btn {
+		display: flex;
+	}
+
+	.nav-item a:hover, .nav-item a:focus, .nav-item a:active {
+		background-color: rgba(250, 250, 250, 0.5);
+	}
+}
+
 /* banner */
 .banner {
-	background-image: url('./assets/header_desktop@2x.png');
+	background-image: url('/assets/header_desktop@2x.png');
 	height: 364px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -148,6 +188,10 @@ header h1 a {
 	padding-bottom: 16px;
 }
 
+.banner-box h2::after {
+	content: '咬一口就無法忘懷的漢堡';
+}
+
 .banner-box h3 {
 	color: #fff;
 }
@@ -155,6 +199,17 @@ header h1 a {
 .banner-box span {
 	font-size: 16px;
 	vertical-align: middle;
+}
+
+@media(max-width: 767px){
+	.banner {
+		background-image: url("/assets/Bitmap@2x.png");
+	}
+
+	.banner-box h2::after {
+		content: '咬一口 \A就無法忘懷的漢堡';
+		white-space: pre;
+	}
 }
 
 /* footer */
@@ -214,6 +269,7 @@ footer {
 	.footer-list {
 		flex-direction: column;
 		gap: 30px;
+		align-items: end;
 	}
 
 	.footer-content {
@@ -231,7 +287,7 @@ footer {
 }
 
 .footer-media h2 a {
-	background-image: url("./assets/logo_l@svg.svg");
+	background-image: url("/assets/logo_l@svg.svg");
 	width: 244px;
 	height: 49px;
 	display: block;
@@ -307,13 +363,27 @@ footer {
 	}
 }
 
+@media(max-width: 767px) {
+	.feature {
+		padding-bottom: 60px;
+	}
+	
+	.feature h3::before {
+		display: none;
+	}
+
+	.feature h3::after {
+		display: none;
+	}
+}
+
 .feature-list {
 	display: flex;
 	gap: 60px;
 }
 
 .feature-item {
-	width: 260px;
+	width: 33%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -338,6 +408,17 @@ footer {
 	}
 }
 
+@media(max-width: 767px) {
+	.feature-list {
+		flex-direction: column;
+		gap: 30px;
+	}
+	
+	.feature-item {
+		width: 100%;
+	}
+}
+
 /* chef */
 .chef {
 	background-color: #3d1101;
@@ -350,6 +431,14 @@ footer {
 	.chef {
 		padding-right: 29px;
 		padding-left: 10px;
+	}
+}
+
+@media(max-width: 767px) {
+	.chef {
+		flex-direction: column;
+		padding: 0;
+		gap: 0;
 	}
 }
 
@@ -378,6 +467,16 @@ footer {
 	}
 }
 
+@media(max-width: 767px) {
+	.chef img {
+		width: 100%;
+	}
+
+	.chef-article {
+		padding: 30px;
+	}
+}
+
 /* review */
 .review {
 	background-color: #efe9e7;
@@ -395,6 +494,12 @@ footer {
 	.review {
 		padding-right: 10px;
 		padding-left: 10px;
+	}
+}
+
+@media(max-width: 767px) {
+	.review {
+		padding-bottom: 60px;
 	}
 }
 
@@ -435,6 +540,12 @@ footer {
 	opacity: 75%;
 }
 
+@media(max-width: 767px) {
+	.review-list {
+		flex-direction: column;
+	}
+}
+
 /* reserve */
 .reserve {
 	background-color: rgba(250, 250, 250, 0.7);
@@ -455,6 +566,12 @@ footer {
 	}
 }
 
+@media(max-width: 767px) {
+	.reserve h3 {
+		margin-bottom: 30px;
+	}
+}
+
 .reserve-section {
 	display: flex;
 	gap: 20px;
@@ -462,12 +579,6 @@ footer {
 
 .reserve-section img {
 	width: 50%;
-}
-
-@media(max-width: 992px) {
-	.reserve-section img {
-		width: 48%;
-	}
 }
 
 .input-name {
@@ -492,8 +603,34 @@ footer {
 }
 
 @media(max-width: 992px) {
+	.reserve-section {
+		width: 100%;
+	}
+	
+	.reserve-section img {
+		width: 48%;
+	}
+
+	.form-section {
+		width: 48%;
+	}
+
 	.input-section {
-		width: 250%;
+		width: 100%;
+	}
+}
+
+@media(max-width: 767px) {
+	.reserve-section {
+		flex-direction: column;
+	}
+
+	.reserve-section img {
+		width: 100%;
+	}
+
+	.form-section {
+		width: 100%;
 	}
 }
 
@@ -518,7 +655,7 @@ footer {
 
 @media(max-width: 992px) {
 	.form-submit {
-		width: 260%;
+		width: 100%;
 	}
 }
 
