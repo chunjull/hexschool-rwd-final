@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jquery": "^3.7.0",
     "purecss": "^3.0.0"
   }
 }
