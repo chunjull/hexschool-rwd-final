@@ -88,7 +88,7 @@ header {
 }
 
 header h1 a {
-	background-image: url("/assets/logo_w@svg.svg");
+	background-image: url("./assets/logo_w@svg.svg");
 	width: 120px;
 	height: 24px;
 	display: block;
@@ -166,7 +166,7 @@ header h1 a {
 
 /* banner */
 .banner {
-	background-image: url('/assets/header_desktop@2x.png');
+	background-image: url("./assets/header_desktop@2x.png");
 	height: 364px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -203,7 +203,7 @@ header h1 a {
 
 @media(max-width: 767px){
 	.banner {
-		background-image: url("/assets/Bitmap@2x.png");
+		background-image: url("./assets/Bitmap@2x.png");
 	}
 
 	.banner-box h2::after {
