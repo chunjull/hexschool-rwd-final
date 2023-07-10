@@ -287,7 +287,7 @@ footer {
 }
 
 .footer-media h2 a {
-	background-image: url("./assets/logo_l@svg.svg");
+	background-image: url(../assets/logo_l@svg.svg);
 	width: 244px;
 	height: 49px;
 	display: block;
@@ -659,7 +659,7 @@ footer {
 	}
 }
 
-.button-register {
+.button-cancel {
 	width: 70px;
 	color: #fff;
 	background-color: rgba(0,0,0,0.35);
@@ -672,7 +672,7 @@ footer {
 	margin-right: 11px;
 }
 
-.button-register:hover, .button-register:focus, .button-register:active {
+.button-cancel:hover, .button-cancel:focus, .button-cancel:active {
 	cursor: pointer;
 	background-color: #F56C23;
 }
