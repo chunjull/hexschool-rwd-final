@@ -659,7 +659,7 @@ footer {
 	}
 }
 
-.button-cancel {
+.button-register {
 	width: 70px;
 	color: #fff;
 	background-color: rgba(0,0,0,0.35);
@@ -672,7 +672,7 @@ footer {
 	margin-right: 11px;
 }
 
-.button-cancel:hover, .button-cancel:focus, .button-cancel:active {
+.button-register:hover, .button-register:focus, .button-register:active {
 	cursor: pointer;
 	background-color: #F56C23;
 }
@@ -765,7 +765,7 @@ footer {
 	margin-top: 30px;
 }
 
-.login-button-cancel {
+.login-button-register {
 	width: 45%;
 	color: #fff;
 	background-color: rgba(0,0,0,0.35);
@@ -778,7 +778,11 @@ footer {
 	margin-right: 20px;
 }
 
-.login-button-cancel:hover, .login-button-cancel:focus, .login-button-cancel:active {
+.login-button-register a {
+	color: #fff;
+}
+
+.login-button-register:hover, .login-button-register:focus, .login-button-register:active {
 	cursor: pointer;
 	background-color: #F56C23;
 }
@@ -827,12 +831,19 @@ footer {
 }
 
 .register-section {
-	width: 620px;
+	max-width: 620px;
 	text-align: left;
 	box-sizing: border-box;
 	padding: 15px;
 	border-top: 3px solid #FF5E45;
 	box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+}
+
+@media(max-width:767px) {
+	.register-section {
+		padding: auto 12px;
+		margin: 0 12px;
+	}
 }
 
 .register-section h5 {
@@ -849,8 +860,20 @@ footer {
 	gap: 20px;
 }
 
+@media(max-width: 767px) {
+	.register-content {
+		flex-direction: column;
+	}
+}
+
 .register-article, .register-form-section {
 	width: 50%;
+}
+
+@media(max-width: 767px) {
+	.register-article, .register-form-section {
+		width: 100%;
+	}
 }
 
 .register-article p {
@@ -864,7 +887,7 @@ footer {
 }
 
 .register-form input {
-	width: 95%;
+	width: 100%;
 	height: 32px;
 	padding-left: 10px;
 	border: 1px solid #CCCCCC;
